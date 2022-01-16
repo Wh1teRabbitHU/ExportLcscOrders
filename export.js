@@ -13,10 +13,12 @@ function crawlPage() {
         const manufacturer = itemContainer.querySelector(`${leftContentSelector} > div:nth-child(3)`).innerText.replace('Mfr: ', '');
         const description = itemContainer.querySelector(`${leftContentSelector} > div:nth-child(4)`).innerText;
         const qty = parseInt(itemContainer.querySelector(centerContentSelector).innerText.replace('Order Qty.: ', '').trim(), 10);
+        const linkSplits = link.split('/');
+        const category = linkSplits[linkSplits.length - 1].split('_')[0].replaceAll('-', ' ');
 
 
         items.push({
-            manufacturer, name, description, qty, link
+            category, manufacturer, name, description, qty, link
         });
     }
 
