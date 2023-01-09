@@ -4,6 +4,10 @@
 	- [Description](#description)
 	- [How to use?](#how-to-use)
 
+## Archived!
+
+LCSC updated their site and added a handy export CSV button, so this repository is no longer relevant.
+
 ## Description
 
 Because we don't have availably any open API endpoints to LCSC, this codebase is focusing on a browser based approach.
